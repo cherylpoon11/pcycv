@@ -208,7 +208,7 @@ p+ul{
     content: '';
     width: 6px;
     background-color: #42A2A5;
-    top:5%;
+    top:6%;
     bottom:8%;
     margin-left: -3px;
   }
@@ -385,7 +385,7 @@ p+ul{
 .openbtn{
     background-color: #D2E9E8;
     height:3rem;
-    width:2.5rem;
+    width:2.3rem;
     padding:0px;
     border-radius: 5px;
     border: 2px solid whitesmoke;
@@ -475,217 +475,16 @@ footer {
 }
 
  /* responsive */
-
-    @media (min-width:100px) and (max-width:640px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
-        .greeting{
-            font-size: 6vh;
-        }
-            
-        .myname{
-                font-size: 10vh;
-         }
-
-        .rightbox{
-            width:50%;
-            text-align: right;
-        }
-
-        .profile{
-            font-size: 4vh;
-        }
-        
-        .profiledetail{
-            font-size: 2vh;
-        }
-
-        #page2 h3{
-            font-size:2.1vh;
-        }
-
-        .page2{
-            font-size:1.7vh;
-        }
-
-        .experience{
-            width:70%;
-            top:40px;
-            line-height: 1.4;
-        }
-
-        .tleft, .tright{
-            left:25%;
-            text-align:left;
-        }
-        
-        .tleft::after{
-            width: 10px;
-            height: 10px;
-            left:-10%;
-            top:-8px;
-        }
-        
-        .tright::after{
-            width: 10px;
-            height: 10px;
-            left:-10%;
-        }
-
-        .timeline::after {
-            left:20%;
-        }
-
-        .connect{
-            font-size: 7vh;
-            display:flex;
-            flex-direction: row;
-            justify-content: center;
-            position:relative;
-            margin:4% 0% 4% 0%;
-            /* height:15%; */
-            top:5%;
-        }
-    
-        .container{
-            display:flex;
-            flex-direction: column;
-            width:100%;
-            position:relative;
-            left:0%;
-            line-height:1.3;
-        }
-
-        .firstbox{
-            height:20%;
-        }
-        
-
-        .middlebox{
-            height:35%;
-            top:5%;
-        }
-
-        .lowerbox{
-            height:28%;
-            top:5%;
-        }
-    
-        #page3 h2{
-            font-size: 4vh;
-        }
-        
-        #page3 h3{
-            font-size: 3vh;
-        }
-    
-        #page3 span{
-            font-size:2vh;
-        }
-
-        /* .openbtn{
-            width:30px;
-            height:35px;
-        } */
-    }
-@media (min-width:641px) and (max-width:1024px)  { /* portrait / landscape tablets, iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-    .greeting{
-        font-size: 7vh;
-    }
-        
-    .myname{
-            font-size: 12vh;
-     }
-
-     .rightbox{
-        width:50%;
-        text-align: right;
-    }
-
-     .profile{
-        font-size: 4vh;
-    }
-
-    #page2 h3{
-        font-size:2.2vh;
-    }
-
-    h3+p{
-        font-size: 2.1vh ;
-    }  
-    
-    .page2{
-        font-size:1.75vh;
-    }
-
-    .experience{
-        width:45%;
-        line-height: 1.4;
-    }
-
-    .tleft{
-        left:0%;
-    }
-
-    .tright::after{
-        left:-3%;
-    }
-
-    .connect{
-        font-size: 7vh;
-    }
-
-    .firstbox{
-        width:45%;
-        height:30%;
-    } 
-
-    .middlebox{
-        width:60%;
-        height:35%;
-        left:35%;
-        top:27%;
-    }
-
-    .lowerbox{
-        width:52%;
-        height:35%;
-        left:1%;
-    }
-
-    #page3 h2{
-        font-size: 3.5vh;
-    }
-    
-    #page3 h3{
-        font-size: 2.5vh;
-    }
-
-    #page3 span{
-        font-size:2vh;
-    }
-      
-
-    /* .openbtn{
-        width:38px;
-        height:45px;
-    } */
-
+ /* @media only screen 
+and (min-width: 812px) and (max-width: 812px) and (max-height: 375px)  {
+    /* iphone X landscacpe
     .iconbar{
-        bottom:40%;
+        height:50%;
     }
-}
+} */
 
-@media only screen 
-and (device-width: 812px) and (device-height: 375px)  {
-    /* iphone X landscacpe */
-.iconbar{
-    height:50%;
-}
-}
-
-
-
-@media only screen 
-and (min-device-width: 1366px) and (max-device-height: 1024px)  {
+@media only screen and (min-width: 1024px) and (max-width:1024px) and (min-height: 1366px) and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 1.5)  {
   /*large Landscape tablet, landscape iPad pro, lo-res laptops ands desktops */
     
     .experience{
@@ -749,6 +548,269 @@ and (min-device-width: 1366px) and (max-device-height: 1024px)  {
     }
 
  }
+
+ @media screen and (min-width:820px) and (max-width: 1080px){
+    #page2 h3{
+        font-size:2.7vh;
+    }
+
+    h3+p{
+        font-size: 2.4vh ;
+    }  
+    
+    .page2{
+        font-size:2.3vh;
+    }
+
+    .tleft::after{
+        width: 17px;
+        height: 17px;
+    }
+    
+    .tright::after{
+        width: 17px;
+        height: 17px; 
+ 
+    }
+
+    .connect{
+        font-size: 12vh;
+    }
+
+    #page3 h2{
+        font-size: 6.5vh;
+    }
+    
+    #page3 h3{
+        font-size: 4vh;
+    }
+
+    #page3 span{
+        font-size:2.3vh;
+    }
+
+    #page3 .lowerbox h2{
+        font-size:5vh;
+    }
+      
+ }
+
+
+
+@media screen and (min-width:641px) and (max-width:821px)  { /* portrait / landscape tablets, iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    .greeting{
+        font-size: 7vh;
+    }
+        
+    .myname{
+            font-size: 12vh;
+     }
+
+     .rightbox{
+        width:50%;
+        text-align: right;
+    }
+
+     .profile{
+        font-size: 4vh;
+    }
+
+    #page2 h3{
+        font-size:2.3vh;
+    }
+
+    h3+p{
+        font-size: 2.1vh ;
+    }  
+    
+    .page2{
+        font-size:1.9vh;
+    }
+
+    .experience{
+        width:45%;
+        line-height: 1.4;
+    }
+
+    .tleft{
+        left:0%;
+    }
+
+    .tright::after{
+        left:-3%;
+    }
+
+    .tleft::after{
+        width: 17px;
+        height: 17px;
+    }
+    
+    .tright::after{
+        width: 17px;
+        height: 17px; 
+ 
+    }
+
+    .connect{
+        font-size: 7vh;
+    }
+
+    .firstbox{
+        width:45%;
+        height:30%;
+    } 
+
+    .middlebox{
+        width:60%;
+        height:35%;
+        left:35%;
+        top:27%;
+    }
+
+    .lowerbox{
+        width:52%;
+        height:35%;
+        left:1%;
+    }
+
+    .skillbox{
+        padding:0px;
+    }
+
+    #page3 h2{
+        font-size: 3.5vh;
+    }
+    
+    #page3 h3{
+        font-size: 2.3vh;
+    }
+
+    #page3 span{
+        font-size:1.8vh;
+    }
+      
+     .openbtn{
+        width:30px;
+        height:45px;
+    }
+
+    .iconbar{
+        bottom:40%;
+    }
+}
+
+@media (min-width:100px) and (max-width:640px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    .greeting{
+        font-size: 6vh;
+    }
+        
+    .myname{
+            font-size: 10vh;
+     }
+
+    .rightbox{
+        width:50%;
+        text-align: right;
+    }
+
+    .profile{
+        font-size: 4vh;
+    }
+    
+    .profiledetail{
+        font-size: 2vh;
+    }
+
+    #page2 h3{
+        font-size:2.1vh;
+    }
+
+    .page2{
+        font-size:1.7vh;
+    }
+
+    .experience{
+        width:70%;
+        top:40px;
+        line-height: 1.4;
+    }
+
+    .tleft, .tright{
+        left:25%;
+        text-align:left;
+    }
+    
+    .tleft::after{
+        width: 10px;
+        height: 10px;
+        left:-10%;
+        top:-8px;
+    }
+    
+    .tright::after{
+        width: 10px;
+        height: 10px;
+        left:-10%;
+    }
+
+    .timeline::after {
+        left:20%;
+    }
+
+    .connect{
+        font-size: 7vh;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        position:relative;
+        margin:4% 0% 4% 0%;
+        /* height:15%; */
+        top:5%;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        position:relative;
+        left:0%;
+        line-height:1.3;
+    }
+
+    .firstbox{
+        height:20%;
+    }
+    
+
+    .middlebox{
+        height:35%;
+        top:5%;
+    }
+
+    .lowerbox{
+        height:28%;
+        top:5%;
+    }
+
+    #page3 h2{
+        font-size: 4vh;
+    }
+    
+    #page3 h3{
+        font-size: 3vh;
+    }
+
+    #page3 span{
+        font-size:2vh;
+    }
+
+    /* .openbtn{
+        width:30px;
+        height:35px;
+    } */
+}
+
+
 /* @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops 
     .connect{
         font-size: 14vh;
